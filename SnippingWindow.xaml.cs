@@ -76,8 +76,8 @@ namespace Paragon.Plugins.ScreenCapture
             rect.X = rect.Left - 80 + SystemInformation.VirtualScreen.Left;
 
             var screen = Screen.GetBounds(rect);
-            Top = top < screen.Top ? screen.Top : top;
-            Left = left < screen.Left ? screen.Left : left;
+            Top = 10;
+            Left = 10;
 
             var image = result.Image;
 
