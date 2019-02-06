@@ -164,7 +164,7 @@ namespace Paragon.Plugins.ScreenCapture
                 using (var fileStream = new FileStream(outputFilename, FileMode.Create))
                 {
                     var jpegEncoder = new JpegBitmapEncoder();
-                    jpegEncoder.QualityLevel = 70;
+                    jpegEncoder.QualityLevel = 100;
                     jpegEncoder.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
                     jpegEncoder.Save(fileStream);
                 }
